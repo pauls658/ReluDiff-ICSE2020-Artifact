@@ -325,7 +325,7 @@ void destroy_network(struct NNet *nnet)
 void load_inputs(int PROPERTY, int inputSize, float *u, float *l, struct NNet *nnet)
 {
     // HAR properties
-    if (PROPERTY >= 1000 && PROPERTY < 2000) {
+    if (PROPERTY >= 1000 && PROPERTY < 1099) {
         int testNum = PROPERTY - 1000;
         for (int i = 0; i < 561; i++) {
             u[i] = fmin((HAR_test[testNum][i] + perturb), 1.0);

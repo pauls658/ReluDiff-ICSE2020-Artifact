@@ -351,4 +351,17 @@ def runHAR():
 
 
 if __name__ == '__main__':
-    runHAR()
+    if len(sys.argv) != 2 or sys.argv[1] not in ["acas", "mnist-global", "mnist-3pixel", "har"]:
+        print("usage: python3 " + sys.argv[0] + " EXP")
+        print("where EXP is one of 'acas', 'mnist-global', 'mnist-3pixel', or 'har'")
+        exit(1)
+
+    exp = sys.argv[1]
+    if exp == "acas":
+        runACAS()
+    elif exp == "mnist-global":
+        runMNIST()
+    elif exp == "mnist-3pixel":
+        runMNIST3Pixel()
+    else:
+        runHAR()

@@ -43,8 +43,9 @@ exps["15"]="4_1|5_1"
 skips["15"]="x"
 
 
-touch exec-time_out
-> exec-time_out
+out=exec-time_out_ACAS
+touch $out
+> $out
 
 # iterate array keys
 for prop in "${!exps[@]}"; do
@@ -55,8 +56,8 @@ for prop in "${!exps[@]}"; do
 			orig_nnet=${orig_nnet/\_16bit\.nnet/\.nnet}
 
 			for epsilon in $epsilons; do
-				echo "./delta_network_test $prop $orig_nnet $compressed_nnet $epsilon" >> exec-time_out
-				timeout -s 2 $TIMEOUT ./delta_network_test $prop $orig_nnet $compressed_nnet $epsilon 2>> exec-time_out
+				echo "./delta_network_test $prop $orig_nnet $compressed_nnet $epsilon" >> $out
+				timeout -s 2 $TIMEOUT ./delta_network_test $prop $orig_nnet $compressed_nnet $epsilon 2>> $out
 			done
 		fi
 	done

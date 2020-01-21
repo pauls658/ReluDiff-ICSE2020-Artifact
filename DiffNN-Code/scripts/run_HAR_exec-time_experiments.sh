@@ -2,7 +2,7 @@
 perturb=0.1
 eps=0.25
 TIMEOUT=600
-out=HAR_exec-time_out
+out=exec-time_out_HAR
 > $out
 
 for testcase in $( seq 1000 1099 ); do

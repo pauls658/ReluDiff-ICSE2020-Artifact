@@ -151,9 +151,6 @@ int main( int argc, char *argv[])
 
     printf("running property %d with network %s with epsilon %.6f\n",\
                 PROPERTY, FULL_NET_PATH2, epsilon);
-    printf("input ranges:\n");
-    printMatrix(&input_upper);
-    printMatrix(&input_lower);
 
     int n = 0;
     int feature_range_length;

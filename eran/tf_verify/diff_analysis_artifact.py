@@ -84,7 +84,7 @@ random_pixels = [
 
 def runMNIST3Pixel():
     nnets = [
-        nnetPrefix + "/mnist_relu_2_512_16bit.pyt",
+        nnetPrefix + "/mnist_relu_3_100_16bit.pyt",
         ]
     perturb = 3
     epsilon = 1.0
@@ -118,6 +118,7 @@ def runMNIST3Pixel():
                 print("Verified", file=sys.stderr)
             else:
                 print("Failed", file=sys.stderr)
+            exit(0)
 
 
 def runMNIST():
@@ -154,6 +155,7 @@ def runMNIST():
                 print("Verified", file=sys.stderr)
             else:
                 print("Failed", file=sys.stderr)
+            exit(0)
 
 
 def runHAR():
@@ -185,6 +187,7 @@ def runHAR():
                 print("Verified", file=sys.stderr)
             else:
                 print("Failed", file=sys.stderr)
+            exit(0)
 
 
 if __name__ == '__main__':

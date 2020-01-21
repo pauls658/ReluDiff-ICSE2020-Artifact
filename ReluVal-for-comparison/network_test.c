@@ -178,10 +178,6 @@ int main( int argc, char *argv[])
 
     printf("running property %d with network %s with epsilon %.6f\n",\
                 PROPERTY, FULL_NET_PATH, epsilon);
-    printf("input ranges:\n");
-
-    printMatrix(&input_upper);
-    printMatrix(&input_lower);
 
     for (int i=0;i<inputSize;i++) {
 

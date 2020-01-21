@@ -76,17 +76,14 @@ def subtract_nnets(nnet1, nnet2, noAffineMode=False):
 
 def main():
     if len(sys.argv) != 4 and len(sys.argv) != 5:
-        print("usage: python " + sys.argv[0] + " <nnet1-path> <nnet2-path> <out.nnet> [noAffineMode]")
+        print("usage: python " + sys.argv[0] + " <nnet1-path> <nnet2-path> <out.nnet>")
         exit(1)
     
     nnet1 = read_network(sys.argv[1])
     nnet2 = read_network(sys.argv[2])
 
 
-    if len(sys.argv) == 5 and sys.argv[4] == "1":
-        res = subtract_nnets(nnet1, nnet2, True)
-    else:
-        res = subtract_nnets(nnet1, nnet2, False)
+    res = subtract_nnets(nnet1, nnet2, False)
 
     write_network(res, sys.argv[3])
 
