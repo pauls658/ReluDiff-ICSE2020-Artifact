@@ -14,7 +14,7 @@ for compressed_nnet in $compressed_nnets; do
 	for testcase in $( seq 400 499 ); do
 		orig_nnet=${compressed_nnet/compressed_nnets/nnet}
 		orig_nnet=${orig_nnet/\_16bit\.nnet/\.nnet}
-		echo "./delta_network_test $testcase $orig_nnet $compressed_nnets $eps $perturb" >> $out
+		echo "./delta_network_test $testcase $orig_nnet $compressed_nnets $eps -p $perturb -t" >> $out
 		timeout $timeout ./delta_network_test \
 			$testcase \
 			$orig_nnet $compressed_nnet\

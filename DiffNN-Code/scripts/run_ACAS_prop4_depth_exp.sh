@@ -1,6 +1,7 @@
 #!/bin/bash
 
-make clean depth bench v1 all
+make clean depth bench all
+
 out=acas_prop4_depths
 > $out
 for compressed_nnet in $( ls compressed_nnets/ACAS* ); do

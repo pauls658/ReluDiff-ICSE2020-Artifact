@@ -1,5 +1,8 @@
 #!/bin/bash
 
+mkdir -p compressed_nnets
+mkdir -p ../ReluVal-for-comparison/subbed_nnets
+
 nnets="mnist_relu_4_1024.nnet
 mnist_relu_3_100.nnet
 mnist_relu_2_512.nnet"

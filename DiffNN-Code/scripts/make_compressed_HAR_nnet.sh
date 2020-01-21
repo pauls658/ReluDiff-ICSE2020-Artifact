@@ -1,5 +1,8 @@
 #!/bin/bash
 
+mkdir -p compressed_nnets
+mkdir -p ../ReluVal-for-comparison/subbed_nnets
+
 nnet="HAR.nnet"
 
 python3 python/round_nnet.py nnet/$nnet \

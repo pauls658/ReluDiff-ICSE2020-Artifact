@@ -1,6 +1,6 @@
 CC=gcc
-CFLAGS +=-I/opt/OpenBLAS/include/ -I/home/yixue/diffnn/OpenBLAS -Wall
-LDFLAGS= -L/opt/OpenBLAS/lib -L/home/yixue/diffnn/OpenBLAS -lopenblas -lpthread -lm
+CFLAGS +=-Wall
+LDFLAGS=-lopenblas -lpthread -lm
 DEPS=matrix.h nnet.h split.h
 
 all: network_test 
