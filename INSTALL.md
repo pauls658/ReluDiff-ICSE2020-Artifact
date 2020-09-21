@@ -1,10 +1,10 @@
 # ReluDiff Setup Instructions
-*These instructions assume a fresh instance of Ubuntu 16.04. We also provide a VM with ReluDiff, ReluVal, and DeepPoly working out-of-the-box here*
+*These instructions assume a fresh instance of Ubuntu 16.04. We also provide a VM with ReluDiff, ReluVal, and DeepPoly working out-of-the-box [here](https://drive.google.com/file/d/1rKKUXIBTtHL4M_a8O2__uAJRveXtg4Cj/view?usp=sharing)*
 
 ## Install necessary packages
 ```console
 sudo apt install make git gcc g++ python3 python3-pip
-pip3 install numpy tensorflow
+pip3 install numpy==1.14.5 tensorflow==1.9.0
 ```
 
 ## Setup a directory to install header and library files
