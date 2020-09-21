@@ -4,7 +4,7 @@
 ## Install necessary packages
 ```console
 sudo apt install make git gcc g++ python3 python3-pip
-pip3 install numpy==1.14.5 tensorflow==1.9.0
+pip3 install numpy==1.18.1 tensorflow==1.14.0
 ```
 
 ## Setup a directory to install header and library files
