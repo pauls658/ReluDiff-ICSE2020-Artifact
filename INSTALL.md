@@ -23,7 +23,7 @@ export LIBRARY_PATH="$LIBRARY_PATH:$INSTALL_PREFIX/lib"
 export C_INCLUDE_PATH="$LD_LIBRARY_PATH:$INSTALL_PREFIX/include"
 ```
 
-*_Note_*: The above *export* commands only affect the _current_ shell session. I recommend adding at least the above three commands to the appropriate .\*rc file (e.g., .basrc) so the compiler and runtime paths are persistent.
+*_Note_*: The above *export* commands only affect the _current_ shell session. I recommend adding at least the above three commands to the appropriate .\*rc file (e.g., .bashrc) so the compiler and runtime paths are persistent.
 
 ## Clone the artifact repo
 ```console
