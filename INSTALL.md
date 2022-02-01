@@ -34,7 +34,7 @@ git clone https://github.com/pauls658/ReluDiff-ICSE2020-Artifact
 First, install OpenBLAS for ReluDiff and ReluVal. In the home directory run:
 ```console
 cd ReluDiff-ICSE2020-Artifact
-bash install_OpenBLAS.sh
+bash install_OpenBLAS.sh $INSTALL_PREFIX
 ```
 
 Then install the dependencies for DeepPoly. From the home directory, run
