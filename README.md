@@ -96,7 +96,7 @@ This is ReluDiff's main executable. To get a help menu, run *./delta\_network\_t
 - NNET1, NNET2: file paths to \*.nnet files to compare.
 - EPSILON: A floating point value. ReluDiff will attempt to verify that NNET1 and NNET2 cannot differ by more than EPSILON over the input region defined by PROPERTY
 - OPTIONS<br/>
-	-p PERTURB : specifies the strength of the global perturbation to apply to the MNIST and HAR properties. For MNIST this should be an integer between 0-254. For HAR, this should be a float between -1 to 1.<br/>
+	-p PERTURB : specifies the strength of the global perturbation to apply to the MNIST and HAR properties. For MNIST this should be an integer between 0-254. For HAR, this should be a float between 0 to 1.<br/>
 	-t : Performs three pixel perturbation on the MNIST images instead of global perturbation<br/>
 	-m DEPTH : (not used for our paper) forces the analysis to 2^DEPTH splits and then prints region verified at each depth<br/>
 
